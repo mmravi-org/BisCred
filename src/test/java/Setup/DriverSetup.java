@@ -16,7 +16,6 @@ public class DriverSetup {
 
 
     public static void setupDriver() throws MalformedURLException {
-        /* edit */
         //WebDriverManager.chromedriver().setup();
         String projectPath= System.getProperty("user.dir");
         //System.setProperty("webdriver.chrome.driver", projectPath + "/chromedriver.exe");
