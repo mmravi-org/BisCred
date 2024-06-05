@@ -20,8 +20,8 @@ public class DriverSetup {
         String projectPath= System.getProperty("user.dir");
         //System.setProperty("webdriver.chrome.driver", projectPath + "/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--lang=en");
+        //options.addArguments("--remote-allow-origins=*");
+        //options.addArguments("--lang=en");
         driver = new ChromeDriver(options);
         //options.addArguments("--remote-allow-origins=*");
         //driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
