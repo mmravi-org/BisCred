@@ -18,7 +18,7 @@ public class DriverSetup {
     public static void setupDriver() throws MalformedURLException {
         //WebDriverManager.chromedriver().setup();
         String projectPath= System.getProperty("user.dir");
-        //System.setProperty("webdriver.chrome.driver", projectPath + "/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", projectPath + "/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         //options.addArguments("--remote-allow-origins=*");
         //options.addArguments("--lang=en");
