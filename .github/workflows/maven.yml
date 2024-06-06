@@ -35,6 +35,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn test -Preg
+    - name: Print
+      run: ls -l
     - name: Stop Docker container
       if: always()
       run: |
