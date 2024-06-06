@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/Features/1.Login.feature"},
-        plugin = {"pretty","junit:Cucumber.xml"},
+        plugin = {"pretty", "html:target/cucumber-reports.html"},
         tags = "",
         glue = {"StepDefinitions","Pages","Base","Enums","Setup","Hooks","helpers","Core","TestData"}
 
