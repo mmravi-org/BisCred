@@ -36,7 +36,10 @@ jobs:
     - name: Build with Maven
       run: mvn test -Preg
     - name: Print
-      run: ls -l
+      run: |
+        cd target
+        ls -l
+          
     - name: Stop Docker container
       if: always()
       run: |
