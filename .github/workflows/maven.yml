@@ -39,7 +39,11 @@ jobs:
       run: |
         cd target
         ls -l
-          
+    - name: Archive Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: CucumberReport
+        path: ./target/*.html
     - name: Stop Docker container
       if: always()
       run: |
