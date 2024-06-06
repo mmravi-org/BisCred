@@ -35,10 +35,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn test -Preg
-    - name: Print
-      run: |
-        cd target
-        ls -l
     - name: Archive Artifacts
       uses: actions/upload-artifact@v3
       with:
